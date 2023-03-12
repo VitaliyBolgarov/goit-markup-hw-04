@@ -218,7 +218,33 @@ img {
 
 .features-item {
     flex-basis: calc((100% - 3 * 24px)/4);
+}
 
+.features-item::before {
+    display: block;
+    content: "";
+    height: 112px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background: #F4F4FD;
+    border-radius: 4px;
+}
+
+.icon-strategy::before {
+    background-image: url(../images/icons/antenna.svg);
+}
+
+.icon-punctuality::before {
+    background-image: url(../images/icons/clock.svg);
+}
+
+.icon-diligence::before {
+    background-image: url(../images/icons/diagram.svg);
+}
+
+.icon-technologies::before {
+    background-image: url(../images/icons/astronaut.svg);
 }
 
 .section-title {
