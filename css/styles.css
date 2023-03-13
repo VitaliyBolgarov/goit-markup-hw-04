@@ -170,8 +170,22 @@ img {
     padding: 188px 0;
 }
 
-.hero {
-    background: #2E2F42;
+.hero {}
+
+.overlay {
+    display: block;
+    content: "";
+    max-width: 1440px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/hero/people-office.jpg);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
 }
 
 .hero-title {
@@ -226,23 +240,22 @@ img {
     height: 112px;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
-    background: #F4F4FD;
+    background-color: #F4F4FD;
     border-radius: 4px;
 }
 
 .icon-strategy::before {
- 
+
     background-image: url(../images/icons/antenna.svg);
 }
 
 .icon-punctuality::before {
- 
+
     background-image: url(../images/icons/clock.svg);
 }
 
 .icon-diligence::before {
- 
+
     background-image: url(../images/icons/diagram.svg);
 }
 
@@ -309,7 +322,7 @@ img {
     margin-right: auto;
 
 
-    background: #F4F4FD;
+    background-color: #F4F4FD;
 }
 
 .team-main-title {
