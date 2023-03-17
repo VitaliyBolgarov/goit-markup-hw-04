@@ -7,7 +7,6 @@
     --btn-hover: #404BBF;
     --customer-color: #8E8F99;
     --icon-color: #F4F4FD;
-    --company-color: #8E8F99;
 }
 
 .logo {
@@ -439,11 +438,7 @@ img {
     background-size: auto;
     background-repeat: no-repeat;
     background-position: center;
-    color: var(--customer-color);
-    box-sizing: border-box;
-    border: 1px solid var(--customer-color);
-    border-radius: 4px;
-    padding: 16px 32px;
+    color: var(--company-color);
 }
 
 .customers-item {
@@ -457,15 +452,23 @@ img {
     cursor: pointer;
 }
 
-.customers-icon {
-    fill: var(--company-color);
+.customers-link {
+    border: 1px solid var(--customer-color);
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 16px 32px;
 }
 
-.customers-item:is(:hover, :focus) {
+.customers-icon {
+    fill: var(--customer-color);
+}
+
+.customers-link:is(:hover, :focus) {
     border: 1px solid var(--btn-hover);
 }
 
-.customers-item:hover .customers-icon {
+.customers-link:hover
+.customers-icon {
     fill: var(--btn-hover);
 }
 
