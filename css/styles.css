@@ -466,8 +466,7 @@ img {
     border: 1px solid var(--btn-hover);
 }
 
-.customers-link:hover
-.customers-icon {
+.customers-link:hover .customers-icon {
     fill: var(--btn-hover);
 }
 
